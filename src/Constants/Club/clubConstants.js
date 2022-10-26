@@ -1,0 +1,31 @@
+/* Club Endpoint*/
+
+//Get All Request
+export const CLUBS_REQUEST = 'CLUBS_REQUEST';
+export const CLUBS_SUCCESS = 'CLUBS_SUCCESS';
+export const CLUBS_FAIL = 'CLUBS_FAIL';
+
+//Post Request
+export const CLUB_ADD_REQUEST = 'CLUB_ADD_REQUEST';
+export const CLUB_ADD_SUCCESS = 'CLUB_ADD_SUCCESS';
+export const CLUB_ADD_FAIL = 'CLUB_ADD_FAIL';
+export const CLUB_ADD_RESET = 'CLUB_ADD_RESET';
+
+//Get One Request
+export const CLUB_DETAILS_REQUEST = 'CLUB_DETAILS_REQUEST';
+export const CLUB_DETAILS_SUCCESS = 'CLUB_DETAILS_SUCCESS';
+export const CLUB_DETAILS_FAIL = 'CLUB_DETAILS_FAIL';
+
+//PUT/UPDATE Request
+export const CLUB_UPDATE_REQUEST = 'CLUB_UPDATE_REQUEST';
+export const CLUB_UPDATE_SUCCESS = 'CLUB_UPDATE_SUCCESS';
+export const CLUB_UPDATE_FAIL = 'CLUB_UPDATE_FAIL';
+export const CLUB_UPDATE_RESET = 'CLUB_UPDATE_RESET';
+
+//Delete Request
+export const CLUB_DELETE_REQUEST = 'CLUB_DELETE_REQUEST';
+export const CLUB_DELETE_SUCCESS = 'CLUB_DELETE_SUCCESS';
+export const CLUB_DELETE_FAIL = 'CLUB_DELETE_FAIL';
+export const CLUB_DELETE_RESET = 'CLUB_DELETE_RESET';
+
+export const CLEAR_ERROR = 'CLEAR_ERROR';

@@ -1,0 +1,31 @@
+/* Team Endpoint*/
+
+//Get All Request
+export const TEAMS_REQUEST = 'TEAMS_REQUEST';
+export const TEAMS_SUCCESS = 'TEAMS_SUCCESS';
+export const TEAMS_FAIL = 'TEAMS_FAIL';
+
+//Post Request
+export const TEAM_ADD_REQUEST = 'TEAM_ADD_REQUEST';
+export const TEAM_ADD_SUCCESS = 'TEAM_ADD_SUCCESS';
+export const TEAM_ADD_FAIL = 'TEAM_ADD_FAIL';
+export const TEAM_ADD_RESET = 'TEAM_ADD_RESET';
+
+//Get One Request
+export const TEAM_DETAILS_REQUEST = 'TEAM_DETAILS_REQUEST';
+export const TEAM_DETAILS_SUCCESS = 'TEAM_DETAILS_SUCCESS';
+export const TEAM_DETAILS_FAIL = 'TEAM_DETAILS_FAIL';
+
+//PUT/UPDATE Request
+export const TEAM_UPDATE_REQUEST = 'TEAM_UPDATE_REQUEST';
+export const TEAM_UPDATE_SUCCESS = 'TEAM_UPDATE_SUCCESS';
+export const TEAM_UPDATE_FAIL = 'TEAM_UPDATE_FAIL';
+export const TEAM_UPDATE_RESET = 'TEAM_UPDATE_RESET';
+
+//Delete Request
+export const TEAM_DELETE_REQUEST = 'TEAM_DELETE_REQUEST';
+export const TEAM_DELETE_SUCCESS = 'TEAM_DELETE_SUCCESS';
+export const TEAM_DELETE_FAIL = 'TEAM_DELETE_FAIL';
+export const TEAM_DELETE_RESET = 'TEAM_DELETE_RESET';
+
+export const CLEAR_ERROR = 'CLEAR_ERROR';
