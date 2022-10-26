@@ -144,7 +144,7 @@ export const managerContractDetailsReducer = (state = { managerContract: {} }, a
         case MANAGER_CONTRACT_DETAILS_SUCCESS:
             return {
                 loading: false,
-                contract: action.payload
+                managerContract: action.payload
             }
         case MANAGER_CONTRACT_DETAILS_FAIL:
             return {

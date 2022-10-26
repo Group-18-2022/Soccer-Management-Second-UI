@@ -41,22 +41,39 @@ const paramContractId = match.params.id;
 if(playerContract && playerContract.contractId !== paramContractId) {
 dispatch(getPlayerContractRequest(paramContractId));
  } else {
+    // setContractId(playerContract.contractId);
+    // setGoalTarget(playerContract.goalTarget);
+    // setMatchesPlayed(playerContract.matchesPlayed);
+    // setDuration(playerContract.duration)
+    // setDateOfBirth(playerContract.personalDetails.dateOfBirth);
+    // setFirstName(playerContract.personalDetails.firstName);
+    // setSurname(playerContract.personalDetails.surname);
+    // setIdNumber(playerContract.personalDetails.idNumber);
+    // setContactId(playerContract.personalDetails.contactDetails.contactId);
+    // setArea(playerContract.personalDetails.contactDetails.area);
+    // setCity(playerContract.personalDetails.contactDetails.city);
+    // setEmailAddress(playerContract.personalDetails.contactDetails.emailAddress);
+    // setPhoneNumber(playerContract.personalDetails.contactDetails.phoneNumber);
+    // setStreetName(playerContract.personalDetails.contactDetails.streetName);
+    // setStreetNumber(playerContract.personalDetails.contactDetails.streetNumber);
+    // setZipCode(playerContract.personalDetails.contactDetails.zipCode);
+
     setContractId(playerContract.contractId);
     setGoalTarget(playerContract.goalTarget);
     setMatchesPlayed(playerContract.matchesPlayed);
     setDuration(playerContract.duration)
-    setDateOfBirth(playerContract.personalDetails.dateOfBirth);
-    setFirstName(playerContract.personalDetails.firstName);
-    setSurname(playerContract.personalDetails.surname);
-    setIdNumber(playerContract.personalDetails.idNumber);
-    setContactId(playerContract.personalDetails.contactDetails.contactId);
-    setArea(playerContract.personalDetails.contactDetails.area);
-    setCity(playerContract.personalDetails.contactDetails.city);
-    setEmailAddress(playerContract.personalDetails.contactDetails.emailAddress);
-    setPhoneNumber(playerContract.personalDetails.contactDetails.phoneNumber);
-    setStreetName(playerContract.personalDetails.contactDetails.streetName);
-    setStreetNumber(playerContract.personalDetails.contactDetails.streetNumber);
-    setZipCode(playerContract.personalDetails.contactDetails.zipCode);
+    setDateOfBirth(playerContract.contract.witness.dateOfBirth);
+    setFirstName(playerContract.contract.witness.firstName);
+    setSurname(playerContract.contract.witness.surname);
+    setIdNumber(playerContract.contract.witness.idNumber);
+    setContactId(playerContract.contract.witness.contactDetails.contactId);
+    setArea(playerContract.contract.witness.contactDetails.area);
+    setCity(playerContract.contract.witness.contactDetails.city);
+    setEmailAddress(playerContract.contract.witness.contactDetails.emailAddress);
+    setPhoneNumber(playerContract.contract.witness.contactDetails.phoneNumber);
+    setStreetName(playerContract.contract.witness.contactDetails.streetName);
+    setStreetNumber(playerContract.contract.witness.contactDetails.streetNumber);
+    setZipCode(playerContract.contract.witness.contactDetails.zipCode);
 }
 
 if(error) {
@@ -137,7 +154,6 @@ dispatch(postPlayerContractRequest(true, playerContract))
 type="text"
 id="contractId_field"
  className="form-control"
- disabled
  value={contractId}
  onChange={(e) => setContractId(e.target.value)}
  />

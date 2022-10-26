@@ -37,6 +37,8 @@ const UpdateManagerContract = ({ match, history }) => {
 
     const paramContractId = match.params.id;
 
+    console.log(managerContract);
+
     useEffect(() => {
         if(managerContract && managerContract.contractId !== paramContractId) {
             dispatch(getManagerContractRequest(paramContractId));
@@ -44,18 +46,18 @@ const UpdateManagerContract = ({ match, history }) => {
             setContractId(managerContract.contractId);
             setMileStone(managerContract.mileStone);
             setNumberofGrievance(managerContract.numberofGrievance);
-            setDateOfBirth(managerContract.personalDetails.dateOfBirth);
-            setFirstName(managerContract.personalDetails.firstName);
-            setSurname(managerContract.personalDetails.surname);
-            setIdNumber(managerContract.personalDetails.idNumber);
-            setContactId(managerContract.personalDetails.contactDetails.contactId);
-            setArea(managerContract.personalDetails.contactDetails.area);
-            setCity(managerContract.personalDetails.contactDetails.city);
-            setEmailAddress(managerContract.personalDetails.contactDetails.emailAddress);
-            setPhoneNumber(managerContract.personalDetails.contactDetails.phoneNumber);
-            setStreetName(managerContract.personalDetails.contactDetails.streetName);
-            setStreetNumber(managerContract.personalDetails.contactDetails.streetNumber);
-            setZipCode(managerContract.personalDetails.contactDetails.zipCode);
+            setDateOfBirth(managerContract.contract.witness.dateOfBirth);
+            setFirstName(managerContract.contract.witness.firstName);
+            setSurname(managerContract.contract.witness.surname);
+            setIdNumber(managerContract.contract.witness.idNumber);
+            setContactId(managerContract.contract.witness.contactDetails.contactId);
+            setArea(managerContract.contract.witness.contactDetails.area);
+            setCity(managerContract.contract.witness.contactDetails.city);
+            setEmailAddress(managerContract.contract.witness.contactDetails.emailAddress);
+            setPhoneNumber(managerContract.contract.witness.contactDetails.phoneNumber);
+            setStreetName(managerContract.contract.witness.contactDetails.streetName);
+            setStreetNumber(managerContract.contract.witness.contactDetails.streetNumber);
+            setZipCode(managerContract.contract.witness.contactDetails.zipCode);
         }
 
         if(error) {
@@ -170,7 +172,7 @@ const UpdateManagerContract = ({ match, history }) => {
                                         type="text"
                                         id="signedDate_field"
                                         className="form-control"
-                                        disabled
+                                    
                                         value={signedDate}
                                         onChange={(e) => setSignedDate(e.target.value)}
                                     />

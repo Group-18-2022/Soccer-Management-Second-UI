@@ -144,7 +144,7 @@ export const playerContractDetailsReducer = (state = { playerContract: {} }, act
         case PLAYER_CONTRACT_DETAILS_SUCCESS:
             return {
                 loading: false,
-                contract: action.payload
+                playerContract: action.payload
             }
         case PLAYER_CONTRACT_DETAILS_FAIL:
             return {
